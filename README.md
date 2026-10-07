@@ -20,6 +20,7 @@ complete before the contract goes for signature, so this public repo holds no pr
 | File | Purpose |
 |---|---|
 | `index.html` | The form, contract and spreadsheet generation, and Send |
+| `logo.png` | Click2Check logo (same file as the other demos) |
 | `template.docx` | The contract with each client detail and price replaced by a `{{placeholder}}` |
 | `template.js` | `template.docx` embedded as base64 (lets the page work from any host, even double-clicked) |
 | `tools/build_template.py` | Rebuilds `template.docx` + `template.js` from the source contract |
@@ -70,6 +71,11 @@ The endpoint only has to send each email in `emails`. Options:
   DNS access to send from @click2check.com.
 
 Optional later step: send the contract to DocuSign or Adobe Sign for e-signature instead of by email.
+
+## Look and feel
+
+The page uses the same tokens, header, sidebar and card styles as the HMRC and Affordability demos
+(copied from those demos' stylesheets), so the three look like one product.
 
 ## Running locally
 
