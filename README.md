@@ -83,6 +83,9 @@ Edit the source .docx, keeping the yellow highlights where they are, then run th
 
     python tools/build_template.py "path/to/new contract.docx"
 
+After rebuilding, bump the `?v=` number on the `template.js` script tag in `index.html` so browsers fetch the
+new template.
+
 The script checks that every section it replaces is highlighted, or holds a price, in the source. If the layout
 has moved, it stops with an error rather than silently producing a broken template.
 
